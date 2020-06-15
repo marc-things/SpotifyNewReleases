@@ -43,7 +43,8 @@ by Chloe x Halle
 
 ### Future Goals:
 - figure out how to get a static token for Spotify API as the one provided in
-the test API expires. (maybe use https://spotipy.readthedocs.io/ ?)
+the test API expires. (https://developer.spotify.com/documentation/general/guides/authorization-guide/)
+- look into Spotipy https://spotipy.readthedocs.io/ 
 - figure out how to save albums.json locally from the GET request.
 - figure out how to send an email automatically using Python.
 - Make the email pretty and provide album art along with artist/song/album.
