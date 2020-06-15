@@ -23,31 +23,35 @@ which opens Spotify.
 - I am currently creating the albums.json file manually. 
 - I am learning to work with getting information from dictionaries to display 
 them in some kind of list. 
-- I can now print singles and albums under the "title" SINGLES/ALBUMS and
-follow that up with a list of artists under the title ARTISTS.
+- I can now individually print the type (single or album) 
+followed by the artists.
 
 example output: 
 ```
-SINGLES/ALBUMS:
-single: The Bigger Picture
-single: Make It Rain
-album: Ungodly Hour
+New Music:
 
-ARTISTS: 
-Lil Baby
-Pop Smoke
-Rowdy Rebel
-Chloe x Halle
+SINGLE: The Bigger Picture
+by Lil Baby
+
+SINGLE: Make It Rain
+by Pop Smoke
+by Rowdy Rebel
+
+ALBUM: Ungodly Hour
+by Chloe x Halle
 ```
 
 ### Future Goals:
 - figure out how to get a static token for Spotify API as the one provided in
 the test API expires. (maybe use https://spotipy.readthedocs.io/ ?)
+- figure out how to save albums.json locally from the GET request.
 - figure out how to send an email automatically using Python.
-- figure out how to group artists with their album.  As of today, i am able to 
-print the singles/albums list first followed by an artist list. This is troublesome
-as I don't know which single/album belongs to which artist. 
-- figure out how to group artists if they belong to the same single/album.
 - Make the email pretty and provide album art along with artist/song/album.
 - Make the album art in the email clickable so it opens Spotify and plays music. 
 
+
+### Completed Goals:
+- figure out how to group artists with their album.  As of today, i am able to 
+print the singles/albums list first followed by an artist list. This is troublesome
+as I don't know which single/album belongs to which artist.
+- figure out how to group artists if they belong to the same single/album.
