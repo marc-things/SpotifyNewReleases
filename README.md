@@ -20,11 +20,8 @@ which opens Spotify.
 
 
 ### Current Implementation:
-- I am currently creating the albums.json file manually. 
-- I am learning to work with getting information from dictionaries to display 
-them in some kind of list. 
-- I can now individually print the type (single or album) 
-followed by the artists.
+- Making an API request using Spotipy.
+- Parse the json and save data to a local file.
 
 example output to new_releases.txt: 
 ```
@@ -42,22 +39,22 @@ by Chloe x Halle
 ```
 
 ### Future Goals:
-- figure out how to send an email automatically using Python using a txt file
+- Figure out how to send an email automatically using Python using a txt file
 as the body
 - Make the email pretty and provide album art along with artist/song/album.
 - Make the album art in the email clickable so it opens Spotify and plays music. 
 
 
 ### Completed Goals:
-- figure out how to group artists with their album.  As of today, i am able to 
+- Figure out how to group artists with their album.  As of today, i am able to 
 print the singles/albums list first followed by an artist list. This is troublesome
 as I don't know which single/album belongs to which artist.
-- figure out how to group artists if they belong to the same single/album.
-- figure out how to get a token for Spotify API as the one provided in
+- Figure out how to group artists if they belong to the same single/album.
+- Figure out how to get a token for Spotify API as the one provided in
 the test API expires. (https://developer.spotify.com/documentation/general/guides/authorization-guide/)
-- look into Spotipy for making api call instead of writing my own 
+- Look into Spotipy for making api call instead of writing my own 
 GET (https://spotipy.readthedocs.io/) 
-- figure out how to save output to local file which will be used as the email
+- Figure out how to save output to local file which will be used as the email
 body later on.
 
 ## HOW-TO
