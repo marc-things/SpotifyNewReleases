@@ -77,6 +77,21 @@ and create a new app.
     export SPOTIPY_CLIENT_SECRET='your-spotify-client-secret'
     export SPOTIPY_REDIRECT_URI='http://127.0.0.1/'
     ```
+   1. NOTE: You will need to re-add environment variables each time you open a 
+   new Terminal. 
+   2. To get around this, you can permanently add variables to ~/.zshenv 
+   on macOS (10.5 and higher now uses zsh)
+    ```
+    echo 'export SPOTIPY_CLIENT_ID='your-spotify-client-id'' >> ~/.zshenv
+    echo 'export SPOTIPY_CLIENT_SECRET='your-spotify-client-secret'' >> ~/.zshenv
+    echo 'export SPOTIPY_REDIRECT_URI='http://127.0.0.1/'' >> ~/.zshenv
+    ```
+   3. Linux/bash: 
+   ```
+    echo 'export SPOTIPY_CLIENT_ID='your-spotify-client-id'' >> ~/.bash_profile
+    echo 'export SPOTIPY_CLIENT_SECRET='your-spotify-client-secret'' >> ~/.bash_profile
+    echo 'export SPOTIPY_REDIRECT_URI='http://127.0.0.1/'' >> ~/.bash_profile
+    ```
 5. Get your Spotify user ID.
     1. Open Spotify.
     2. Click your username in the top right corner. 
