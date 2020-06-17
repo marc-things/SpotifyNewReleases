@@ -10,10 +10,10 @@ scope = 'user-read-private user-read-playback-state user-modify-playback-state'
 
 # Erase cache and prompt for user permission
 try:
-    token = util.prompt_for_user_token(username, scope) # add scope
+    token = util.prompt_for_user_token(username, scope)  # add scope
 except (AttributeError, JSONDecodeError):
     os.remove(f".cache-{username}")
-    token = util.prompt_for_user_token(username, scope) # add scope
+    token = util.prompt_for_user_token(username, scope)  # add scope
 
 spotifyObject = spotipy.Spotify(auth=token)
 
@@ -21,6 +21,7 @@ data = spotifyObject.new_releases(country='US', limit=30)
 
 releases = open('releases.txt', 'w')
 releases.write("New Music:" + '\n\n')
+
 # parsing through json to get singles/albums and their artist names
 album_items = (data['albums']['items'])
 for key in range(len(album_items)):
@@ -34,4 +35,4 @@ for key in range(len(album_items)):
     releases.write('\n')
 releases.close()
 
-send_email.send_email()
+send_email.send_email(sys.argv[2])
