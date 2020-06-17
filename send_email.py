@@ -5,9 +5,7 @@ from email.message import EmailMessage
 EMAIL_ADDRESS = os.environ.get('EMAIL_USER')
 EMAIL_PASSWORD = os.environ.get('EMAIL_PASS')
 
-file = open('releases.txt', 'r')
-data = file.read()
-body = data
+file = open('releases.txt')
 
 
 def send_email(send_to_address):
@@ -18,5 +16,5 @@ def send_email(send_to_address):
         msg['Subject'] = 'New Music Friday'
         msg['From'] = EMAIL_ADDRESS
         msg['To'] = send_to_address
-        msg.set_content(body)
+        msg.set_content(file.read())
         smtp.send_message(msg)
