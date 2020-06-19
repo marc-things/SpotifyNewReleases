@@ -17,7 +17,7 @@ except (AttributeError, JSONDecodeError):
 
 spotifyObject = spotipy.Spotify(auth=token)
 
-data = spotifyObject.new_releases(country='US', limit=30)
+data = spotifyObject.new_releases(country='US', limit=40)
 
 releases = open('releases.txt', 'w')
 releases.write("New Music:" + '\n\n')
