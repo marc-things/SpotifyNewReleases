@@ -21,7 +21,7 @@ which opens Spotify.
 
 ### Current Implementation:
 - A request is made to the Spotify API with a specified user account
- to get the 30 newest releases in the USA. 
+ to get the 40 newest releases in the USA. 
 - The json is parsed for singles, albums and their artists.
 - The artist is grouped under the release.
 - A plain text email gets sent using gmail smtp to a specified user. 
