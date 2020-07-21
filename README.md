@@ -71,6 +71,9 @@ and create a new app.
 2. Clone this repo locally.
 3. Install dependencies
     - [Spotipy](https://spotipy.readthedocs.io/en/2.7.0/#installation)
+    - If you are using venv, you can use the provided requirements.txt.
+    - OR
+    - You can also install spotipy via pip3.  Note: Results may vary based on dependency version.
     ```
     pip3 install spotipy --upgrade
    ```
